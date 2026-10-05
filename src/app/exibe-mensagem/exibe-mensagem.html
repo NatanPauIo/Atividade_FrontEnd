@@ -4,6 +4,11 @@
     #nome 
     (keyup)="alterarMensagem(nome.value)">
 </form>
-<div class="msg">
-    <p>{{mensagem}}</p>
-</div>
+
+@if(mensagem.length > 0){
+    <div class="msg">
+        <p>{{mensagem}}</p>
+    </div>
+}
+
+<input type="button" value="Limpar" (click)="limparMensagem()">

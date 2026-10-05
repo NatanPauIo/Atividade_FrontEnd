@@ -11,7 +11,14 @@ export class ExibeMensagem {
   constructor() {
     this.mensagem = ''
   } 
+
   alterarMensagem(nome: string) {
     this.mensagem = `Seja bem-vindo, ${nome}!`;
   }
+
+  limparMensagem() {
+    this.mensagem = '';
+  }
+
+
 }
